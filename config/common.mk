@@ -29,3 +29,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/jdm/prebuilt/supersu/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
     vendor/jdm/prebuilt/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
+
+# init.d script support
+PRODUCT_COPY_FILES += \
+    vendor/jdm/prebuilt/bin/sysinit:system/bin/sysinit
