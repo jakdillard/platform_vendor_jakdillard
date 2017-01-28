@@ -3,6 +3,16 @@
 # Common overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/jakdillard/overlay/common
 
+# Get Sounds
+$(call inherit-product-if-exists, vendor/jakdillard/data/sounds/AudioPackage_Google.mk)
+
+# Default Sounds
+# Sound settings used in all builds
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.config.ringtone=Titania.ogg \
+    ro.config.notification_sound=Tethys.ogg \
+    ro.config.alarm_alert=Oxygen.ogg
+
 # Google Device specific
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
