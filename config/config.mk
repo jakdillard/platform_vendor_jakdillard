@@ -5,8 +5,7 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/jakdillard/overlay/common
 
 # Additional Packages
 PRODUCT_PACKAGES += \
-    Chromium \
-    libprotobuf-cpp-full
+    Chromium
 
 # Get Sounds
 $(call inherit-product-if-exists, vendor/jakdillard/data/sounds/AudioPackage_Google.mk)
@@ -41,6 +40,10 @@ PRODUCT_COPY_FILES += \
 # Latin IME gesture typing 
 PRODUCT_COPY_FILES += \
     vendor/jakdillard/prebuilt/lib64/libjni_latinimegoogle.so:system/lib64/libjni_latinime.so
+
+# Include explicitly to work around Facelock issues
+PRODUCT_PACKAGES += \
+    libprotobuf-cpp-full
 
 # Disable dex optimization
 ifeq ($(HOST_OS),linux)
