@@ -5,6 +5,7 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/jakdillard/overlay/common
 
 # Additional Packages
 PRODUCT_PACKAGES += \
+    Chromium \
     libprotobuf-cpp-full
 
 # Get Sounds
