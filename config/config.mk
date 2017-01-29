@@ -5,6 +5,7 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/jakdillard/overlay/common
 
 # Additional Packages
 PRODUCT_PACKAGES += \
+    Gallery2
 
 # Get Sounds
 $(call inherit-product-if-exists, vendor/jakdillard/data/sounds/AudioPackage_Google.mk)
