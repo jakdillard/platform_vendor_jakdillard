@@ -1,13 +1,5 @@
 # Prebuilts
 
-# Bootanimation
-PRODUCT_COPY_FILES += \
-    vendor/jakdillard/prebuilt/bootanimation/bootanimation.zip:system/media/bootanimation.zip
-
-# Latin IME gesture typing
-PRODUCT_COPY_FILES += \
-    vendor/jakdillard/prebuilt/lib64/libjni_latinimegoogle.so:system/lib64/libjni_latinime.so
-
 # Backup Tool
 PRODUCT_COPY_FILES += \
     vendor/jakdillard/prebuilt/bin/backuptool.sh:install/bin/backuptool.sh \
